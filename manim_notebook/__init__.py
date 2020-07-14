@@ -27,13 +27,14 @@ def manim(line, cell):
     #parse the specified arguments. "parse_args" is
     #slightly modified manim function "manimlib.config.parse_cli()".
     #It takes an additional argument -v or --verbose.
-    args = parse_args([file_name] + line.strip().split())
+    args = parse_args(line.strip().split())
 
     #if output file_name is specified then use the same
     #name as the file to store code.
     if args.file_name:
         file_name = args.file_name + '.py'
 
+    args.file = file_name
     #display output cell beside input cell if args.no_split == False
     if not args.no_split:
         split_screen()

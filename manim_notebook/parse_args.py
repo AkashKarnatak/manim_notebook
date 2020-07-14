@@ -8,7 +8,7 @@ def parse_args(args_to_parse=sys.argv[1:]):
     try:
         parser = argparse.ArgumentParser()
         parser.add_argument(
-            "file",
+            "--file",
             help="path to file holding the python code for the scene",
         )
         parser.add_argument(
