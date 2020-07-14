@@ -9,11 +9,10 @@ def get_video(src, width=480, height=300):
     try:
         video_file = open(src, 'rb')
         binary_data = video_file.read()
-    except FileNotFoundError as e:
-        video_file.close()
+    except Exception as e:
+        print(e)
         return ''
-    finally:
-        video_file.close()
+    video_file.close()
     binary_data = base64.b64encode(binary_data)
     return f"""<br>
     <video width="{width}" height="{height}" autoplay controls>
@@ -26,10 +25,9 @@ def get_image(src, width=480, height=300):
     try:
         image_file = open(src, 'rb')
         binary_data = image_file.read()
-    except FileNotFoundError as e:
-        image_file.close()
+    except Exception as e:
+        print(e)
         return ''
-    finally:
-        image_file.close()
+    image_file.close()
     binary_data = base64.b64encode(binary_data)
     return f'<br><img width="{width}" height="{height}" src="data:image/png;base64,{binary_data.decode("ascii")}">'
