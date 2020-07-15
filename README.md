@@ -31,4 +31,4 @@ Learn basic usage of `manim_notebook` from [this][tutorial] jupyter notebook.
 
 [preview]: images/preview.png
 [ipython_magic]: https://ipython.readthedocs.io/en/stable/interactive/magics.html#cell-magics
-[tutorial]: Tutorial.ipynb
+[tutorial]: https://htmlpreview.github.io/?https://github.com/AkashKarnatak/manim_notebook/blob/master/Tutorial.html
