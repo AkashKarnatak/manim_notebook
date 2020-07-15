@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Usage
 `manim_notebook` makes use of IPython's [cell magic][ipython_magic] commands to integrate manim in jupyter notebook. Cell magic takes a form like `%%magic` and are placed on top of each cell in jupyter notebook. 
 
-Learn basic usage of `manim_notebook` from [this][tutorial] jupyter notebook.
+Learn basic usage of `manim_notebook` [here][tutorial].
 
 
 
