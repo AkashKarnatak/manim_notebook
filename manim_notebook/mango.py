@@ -3,6 +3,9 @@ import argparse
 from . import manim
 import sys
 
+#this enables autocomplete 
+from manimlib.imports import *
+
 #global verialbes
 TAB = '    '
 SETTINGS = {

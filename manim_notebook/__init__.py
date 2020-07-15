@@ -10,6 +10,9 @@ from .split import split_screen
 import manimlib
 from . import es
 
+#this enables autocomplete 
+from manimlib.imports import *
+
 @register_cell_magic
 def manim(line, cell):
 
@@ -47,7 +50,7 @@ def manim(line, cell):
     #closed. So if args.verbose == true, then suppress
     #the output.
     if not args.verbose:
-        capture_output = io.capture_output()
+        capture_output = io.capture_output(stderr=args.quiet)
         capture_output.__enter__()
 
     #manim functions
@@ -64,7 +67,7 @@ def manim(line, cell):
     #because we don't want to suppress the list of scene class 
     #which is displayed on the output when multiple classes are
     #present in the code.
-    all_scene_objects = es.main(config, args.verbose)
+    all_scene_objects = es.main(config, verbose=args.verbose, quiet=args.quiet)
 
     #this contain the html attributes to render, like the video
     #and images of the output file

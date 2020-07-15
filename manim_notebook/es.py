@@ -8,7 +8,7 @@ from manimlib.utils.sounds import play_error_sound
 from IPython.utils import io
 import traceback
 
-def main(config, verbose):
+def main(config, verbose, quiet):
     module = config["module"]
     all_scene_classes = get_scene_classes_from_module(module)
     scene_classes_to_render = get_scenes_to_render(all_scene_classes, config)
@@ -20,7 +20,7 @@ def main(config, verbose):
     #list of scene classes when, more than one scenes are
     #present in the module
     if not verbose:
-        capture_output = io.capture_output()
+        capture_output = io.capture_output(stderr=quiet)
         capture_output.__enter__()
     scene_kwargs = dict([
         (key, config[key])
