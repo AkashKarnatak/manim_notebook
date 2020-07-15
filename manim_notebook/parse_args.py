@@ -123,6 +123,10 @@ def parse_args(args_to_parse=sys.argv[1:]):
             action='store_true',
             help="Don't show input and output cells side by side",
         )
+        parser.add_argument(
+            "-z", "--frame-size",
+            help="Ouput frame size, passed as \"height,width\"",
+        )
         video_group = parser.add_mutually_exclusive_group()
         video_group.add_argument(
             "--video_dir",

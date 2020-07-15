@@ -75,8 +75,12 @@ def manim(line, cell):
     width = 480
 
     #if resolution is explicitly provided then use provided values instead
-    if args.resolution:
-        height, width = [int(x) for x in args.resolution.strip().split(',')]
+    if args.frame_size:
+        try:
+            height, width = [int(x) for x in args.frame_size.strip().split(',')]
+        except Exception as e:
+            print(e,'\nFrame size should have a format, height,width', file=sys.stderr)
+            sys.exit(1)
 
     #loop through all the scene class objects to find the 
     #location of their respective output media files.
