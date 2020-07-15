@@ -1,4 +1,0 @@
-IPython
-manimlib
-notebook
-argparse
