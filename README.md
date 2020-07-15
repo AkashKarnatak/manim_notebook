@@ -10,6 +10,15 @@ You can directly install `manim_notebook` from PyPI via pip:
 ```
 pip install manim_notebook
 ```
+Make sure you installed the correct version of `manim_notebook` by running this command
+```
+pip show manim_notebook
+```
+If your version is not `1.0.1` then reinstall `manim_notebook`.
+```
+pip uninstall manim_notebook
+pip install manim_notebook==1.0.1
+```
 or
 ### Directly
 You can also install and configure things manually by cloning this repository,
