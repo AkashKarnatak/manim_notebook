@@ -1,5 +1,5 @@
 #this file is same as manimlib.config.parse_cli()
-#Changes are mentioned by comments
+#Changes are addressed by comments
 import sys
 import argparse
 #parse_args accepts an argument, a list of 

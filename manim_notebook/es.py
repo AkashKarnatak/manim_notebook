@@ -1,5 +1,5 @@
 #this file is same as manimlib.extract_scene.main(config)
-#Changes are mentioned by comments
+#Changes are addressed by comments
 import sys
 
 from manimlib.extract_scene import get_scene_classes_from_module, get_scenes_to_render, open_file_if_needed
