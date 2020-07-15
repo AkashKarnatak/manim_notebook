@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+manim_notebook/__init__.py
+manim_notebook/es.py
+manim_notebook/fetch_output.py
+manim_notebook/mango.py
+manim_notebook/manim_cell.py
+manim_notebook/parse_args.py
+manim_notebook/split.py
+manim_notebook.egg-info/PKG-INFO
+manim_notebook.egg-info/SOURCES.txt
+manim_notebook.egg-info/dependency_links.txt
+manim_notebook.egg-info/requires.txt
+manim_notebook.egg-info/top_level.txt
