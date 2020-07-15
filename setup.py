@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="manim_notebook",
-    version="1.0.0",
+    version="1.0.1",
     description="Integrates manim with jupyter notebook",
     long_description=long_description,
     long_description_content_type="text/markdown",
