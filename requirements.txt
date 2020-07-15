@@ -1,0 +1,5 @@
+manimlib
+IPython
+notebook
+argparse
+pycairo==1.18.0
