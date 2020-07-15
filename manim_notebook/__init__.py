@@ -43,7 +43,7 @@ def manim(line, cell):
         split_screen()
 
     #write to the file
-    with open(file_name, 'w') as new_file:
+    with open(args.file, 'w') as new_file:
         new_file.write(cell)
 
     #io.capture_output() suppress output until its 
