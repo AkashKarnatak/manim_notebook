@@ -1,10 +1,7 @@
 from IPython.core.magic import register_cell_magic
 import argparse
-from . import manim
+from .manim_cell import manim
 import sys
-
-#this enables autocomplete 
-from manimlib.imports import *
 
 #global verialbes
 TAB = '    '
